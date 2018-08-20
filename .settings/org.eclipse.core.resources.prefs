@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+encoding//DataConfig/Booking/RegularReserveData.py=utf-8
+encoding//DataConfig/Checkin/CheckinData.py=utf-8
+encoding//DataConfig/Coupon/GiveRoomCouponData.py=utf-8
+encoding//DataConfig/Coupon/NoThresholdCouponData.py=utf-8
+encoding//DataConfig/Market/PointRoomRule_datas.py=utf-8
+encoding//DataConfig/Market/RrechargeRule_datas.py=utf-8
+encoding//DataConfig/Member/MemberInfo_datas.py=utf-8
+encoding//DataConfig/Member/MemberType_datas.py=utf-8
+encoding//DataConfig/Order/OrderDatas.py=utf-8
+encoding//DataConfig/login_data.py=utf-8
+encoding//PublicUitl/PublicMethod.py=utf-8
+encoding//PublicUitl/RandomCharacters.py=utf-8
+encoding//Test/test.py=utf-8
+encoding//libspecs/BuiltIn.py=utf-8
