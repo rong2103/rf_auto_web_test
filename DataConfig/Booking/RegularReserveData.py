@@ -1,15 +1,26 @@
 #!usr/bin/python
 #coding:utf-8  
 import random
+import string
+import sys
+import os
+cur_dir = os.path.split(os.path.abspath(__file__))[0]
+des_dir=cur_dir.replace("DataConfig\Booking","PublicUitl")
+sys.path.append(des_dir)
+# print sys.path
+import PublicMethod
 
-reserv_person_data=u"洋"
-reserv_register_name='reserv_member'
+remark='auto_test'
+#预订数据
+reserv_person_data=PublicMethod.strname()
+reserv_register_name=PublicMethod.strname()
 #random mobile
-prelist=["130","131","132","133","134","135","136","137","138","139","147","150","151","152","153","155","156","157","158","159","186","187","188"]
-
-reserv_mobile_data=random.choice(prelist)+"".join(random.choice("0123456789") for i in range(8))
+reserv_mobile_data=PublicMethod.TelCreator()
 
 #team name
-team_name_data='teamA'
+team_name_data=PublicMethod.strname()
 
+#修改预订单
 
+modify_mobile_data=PublicMethod.TelCreator()
+modify_person_data=PublicMethod.strname()

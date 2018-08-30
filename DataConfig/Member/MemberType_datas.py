@@ -1,14 +1,20 @@
 #!usr/bin/python
 #encoding:utf-8
-import string
 import random
+import string
+import sys
+import os
+cur_dir = os.path.split(os.path.abspath(__file__))[0]
+des_dir=cur_dir.replace("DataConfig\Member","PublicUitl")
+sys.path.append(des_dir)
+# print sys.path
+import PublicMethod
 
-new_membertype_name=''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(6))
-new_membertype_level='100'
-new_membertype_cost='100'
-new_membertype_remark='autotest'
+remark='autotest'
+new_membertype_name=PublicMethod.strname()
+new_membertype_level=random.randint(99, 9999)
+new_membertype_cost=PublicMethod.Randint()
 
-edit_membertype_name=''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(6))
-edit_membertype_level='99'
-edit_membertype_cost='99'
-edit_membertype_remark='autotest'
+edit_membertype_name=PublicMethod.strname()
+edit_membertype_level=random.randint(99, 9999)
+edit_membertype_cost=PublicMethod.Randint()

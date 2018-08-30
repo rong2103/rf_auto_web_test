@@ -16,9 +16,9 @@ ${customerType_unit_radio}    //nz-radio-group[@formcontrolname="customer_type"]
 ${customerType_intermediary_radio}    //nz-radio-group[@formcontrolname="customer_type"]/label//span[text()='中介']
 
 ###会员单位中介输入框
-${guestusername_selector}    //nz-select[@formcontrolname="gusetUsername"]/div/div/div
-${guestusername_li}    //div[@style="overflow: auto;"]/ul/li
-${guestusername_input}    //nz-select[@formcontrolname="gusetUsername"]/div/div/div[3]/div/input
+${ch_guestusername_selector}    //nz-select[@formcontrolname="guestUsername"]/div/div/div
+${ch_guestusername_li}    //div[@style="overflow: auto;"]/ul/li
+${ch_guestusername_input}    //nz-select[@formcontrolname="guestUsername"]/div/div/div[3]/div/input
 
 #入住人姓名
 ${checkin_username}    //nz-input[@formcontrolname="checkin_username"]/input
@@ -36,12 +36,25 @@ ${checkin_type_li_ziyong}    //div[@style='overflow: auto;']/ul/li[2]
 ${checkin_type_li_free}    //div[@style='overflow: auto;']/ul/li[3]
 
 #选择房型
-${add_roomtype_input}   //tbody/tr/td[4]/input
-${add_room_type}    //tbody/tr/td[4]/span[text()='+']
+${chec_add_roomtype_input}   //tbody/tr/td[4]/input
+${chec_add_room_type}    //tbody/tr/td[4]/span[text()='+']
 #自动排房按钮
 ${auto_selectroom_button}    //span[text()='自动排房']/..
 #选择房间号
 ${select_room_number}    //div[@class="selectH"]/../div[3]/span
+#添加入住人按钮
+${chec_add_checperson_button}    //span[text()='添加入住人']/..
+#添加入住人-第一行姓名
+${add_checperson_name_input1}    //div[text()='添加入住人']/../..//table/tbody/tr[1]/td[4]//input
+#添加入住人-第一行证件号码
+${add_checperson_idno_input1}    //div[text()='添加入住人']/../..//table/tbody/tr[1]/td[6]//input
+#添加入住人-第二行姓名
+${add_checperson_name_input2}    //div[text()='添加入住人']/../..//table/tbody/tr[2]/td[4]//input
+#添加入住人-第二行证件号码
+${add_checperson_idno_input2}    //div[text()='添加入住人']/../..//table/tbody/tr[2]/td[6]//input
+#添加入住人-确定按钮
+${add_checperson_confbtn}    //div[text()='添加入住人']/../..//div[@class="ant-modal-footer ng-star-inserted"]/button[2]
+
 #确定按钮
 ${reserv_confirm_button}    //span[text()='确定']/..
 
@@ -50,7 +63,7 @@ ${reserv_confirm_button}    //span[text()='确定']/..
 
 #########################团队入住
 #团名
-${team_name}    //nz-input[@formcontrolname="teamName"]/input
+${team_name_input}    //nz-input[@formcontrolname="teamName"]/input
 #公付
 ${teamFeeType_selector}    //nz-select[@formcontrolname="teamFeeType"]/div/span
 ${teamFeeType_li_wu}    //div[@style='overflow: auto;']/ul/li

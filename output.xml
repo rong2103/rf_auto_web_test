@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180830 18:04:34.902" generator="Robot 2.8.5 (Python 2.7.13 on win32)">
+<suite source="D:\Subversion\RFWorkSpace\pms_auto_web" id="s1" name="Pms Auto Web">
+<suite source="D:\Subversion\RFWorkSpace\pms_auto_web\CaseSuites" id="s1-s1" name="CaseSuites">
+<suite source="D:\Subversion\RFWorkSpace\pms_auto_web\CaseSuites\Member" id="s1-s1-s1" name="Member">
+<suite source="D:\Subversion\RFWorkSpace\pms_auto_web\CaseSuites\Member\MemberTypeSuite.robot" id="s1-s1-s1-s1" name="MemberTypeSuite">
+<kw type="setup" name="BuiltIn.Run Keywords">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>login</arg>
+<arg>AND</arg>
+<arg>切换到集团</arg>
+</arguments>
+<kw type="kw" name="LoginResource.login">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180830 18:04:35.212" level="INFO">Opening browser 'chrome' to base url 'http://pms.tianehui.net/pms/booking'.</msg>
+<status status="PASS" endtime="20180830 18:04:42.951" starttime="20180830 18:04:35.211"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Maximize Browser Window">
+<doc>Maximizes current browser window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20180830 18:04:44.113" starttime="20180830 18:04:42.952"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${user_ele}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20180830 18:04:44.118" level="INFO">Typing text '073156666666' into text field '//input[@id='username']'.</msg>
+<status status="PASS" endtime="20180830 18:04:44.304" starttime="20180830 18:04:44.115"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${pwd_ele}</arg>
+<arg>${pwd}</arg>
+</arguments>
+<msg timestamp="20180830 18:04:44.306" level="INFO">Typing text '0123' into text field '//input[@id='password']'.</msg>
+<status status="PASS" endtime="20180830 18:04:44.450" starttime="20180830 18:04:44.305"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${login}</arg>
+</arguments>
+<msg timestamp="20180830 18:04:44.453" level="INFO">Clicking button '//input[@id='submit']'.</msg>
+<status status="PASS" endtime="20180830 18:04:44.562" starttime="20180830 18:04:44.452"></status>
+</kw>
+<status status="PASS" endtime="20180830 18:04:44.563" starttime="20180830 18:04:35.210"></status>
+</kw>
+<kw type="kw" name="LoginResource.切换到集团">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Wait Until Element Is Visible">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${change_hotel_select}</arg>
+</arguments>
+<status status="PASS" endtime="20180830 18:04:47.444" starttime="20180830 18:04:44.566"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Sleep">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20180830 18:04:49.449" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180830 18:04:49.450" starttime="20180830 18:04:47.445"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${change_hotel_select}</arg>
+</arguments>
+<msg timestamp="20180830 18:04:49.455" level="INFO">Clicking element '//nz-select/div/div/div'.</msg>
+<status status="PASS" endtime="20180830 18:04:49.597" starttime="20180830 18:04:49.452"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Wait Until Element Is Visible">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${change_jituan_li}</arg>
+</arguments>
+<status status="PASS" endtime="20180830 18:04:49.645" starttime="20180830 18:04:49.599"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Sleep">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20180830 18:04:51.648" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180830 18:04:51.648" starttime="20180830 18:04:49.647"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${change_jituan_li}</arg>
+</arguments>
+<msg timestamp="20180830 18:04:51.651" level="INFO">Clicking element '//div[@style="overflow: auto;"]/ul/li'.</msg>
+<status status="PASS" endtime="20180830 18:04:54.226" starttime="20180830 18:04:51.650"></status>
+</kw>
+<status status="PASS" endtime="20180830 18:04:54.228" starttime="20180830 18:04:44.564"></status>
+</kw>
+<status status="PASS" endtime="20180830 18:04:54.229" starttime="20180830 18:04:35.208"></status>
+</kw>
+<test id="s1-s1-s1-s1-t1" name="新增会员类型">
+<kw type="kw" name="LoginResource.点击会员菜单">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Wait Until Element Is Enabled">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${member_Nag}</arg>
+</arguments>
+<status status="PASS" endtime="20180830 18:04:54.568" starttime="20180830 18:04:54.234"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Sleep">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20180830 18:04:56.573" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180830 18:04:56.574" starttime="20180830 18:04:54.570"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${member_Nag}</arg>
+</arguments>
+<msg timestamp="20180830 18:04:56.581" level="INFO">Clicking element '//a[text()='会员']'.</msg>
+<status status="PASS" endtime="20180830 18:04:58.752" starttime="20180830 18:04:56.577"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${member_Nag}</arg>
+</arguments>
+<msg timestamp="20180830 18:04:58.755" level="INFO">Clicking element '//a[text()='会员']'.</msg>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20180830 18:04:59.076" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-41.png"&gt;&lt;img src="selenium-screenshot-41.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180830 18:04:59.076" starttime="20180830 18:04:58.769"></status>
+</kw>
+<msg timestamp="20180830 18:04:59.079" level="FAIL">Element with locator '//a[text()='会员']' not found.</msg>
+<status status="FAIL" endtime="20180830 18:04:59.081" starttime="20180830 18:04:58.753"></status>
+</kw>
+<status status="FAIL" endtime="20180830 18:04:59.082" starttime="20180830 18:04:54.232"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20180830 18:04:59.084" critical="yes" starttime="20180830 18:04:54.230">Element with locator '//a[text()='会员']' not found.</status>
+</test>
+<kw type="teardown" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20180830 18:05:01.254" starttime="20180830 18:04:59.085"></status>
+</kw>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20180830 18:05:01.257" starttime="20180830 18:04:34.969"></status>
+</suite>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20180830 18:05:01.264" starttime="20180830 18:04:34.966"></status>
+</suite>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20180830 18:05:01.268" starttime="20180830 18:04:34.962"></status>
+</suite>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20180830 18:05:01.271" starttime="20180830 18:04:34.926"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" pass="0" id="s1" name="Pms Auto Web">Pms Auto Web</stat>
+<stat fail="1" pass="0" id="s1-s1" name="CaseSuites">Pms Auto Web.CaseSuites</stat>
+<stat fail="1" pass="0" id="s1-s1-s1" name="Member">Pms Auto Web.CaseSuites.Member</stat>
+<stat fail="1" pass="0" id="s1-s1-s1-s1" name="MemberTypeSuite">Pms Auto Web.CaseSuites.Member.MemberTypeSuite</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20180830 18:04:35.209" level="ERROR">Calling listener method 'start_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:35.210" level="ERROR">Calling listener method 'start_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:35.211" level="ERROR">Calling listener method 'start_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:42.951" level="ERROR">Calling listener method 'end_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:42.953" level="ERROR">Calling listener method 'start_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:44.115" level="ERROR">Calling listener method 'end_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:44.117" level="ERROR">Calling listener method 'start_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:44.304" level="ERROR">Calling listener method 'end_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:44.305" level="ERROR">Calling listener method 'start_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:44.450" level="ERROR">Calling listener method 'end_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:44.452" level="ERROR">Calling listener method 'start_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:44.563" level="ERROR">Calling listener method 'end_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:44.564" level="ERROR">Calling listener method 'end_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:44.565" level="ERROR">Calling listener method 'start_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:44.567" level="ERROR">Calling listener method 'start_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:47.445" level="ERROR">Calling listener method 'end_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:47.446" level="ERROR">Calling listener method 'start_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:49.451" level="ERROR">Calling listener method 'end_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:49.453" level="ERROR">Calling listener method 'start_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:49.598" level="ERROR">Calling listener method 'end_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:49.600" level="ERROR">Calling listener method 'start_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:49.646" level="ERROR">Calling listener method 'end_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:49.648" level="ERROR">Calling listener method 'start_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:51.649" level="ERROR">Calling listener method 'end_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:51.650" level="ERROR">Calling listener method 'start_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:54.226" level="ERROR">Calling listener method 'end_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:54.228" level="ERROR">Calling listener method 'end_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:54.229" level="ERROR">Calling listener method 'end_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:54.233" level="ERROR">Calling listener method 'start_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:54.234" level="ERROR">Calling listener method 'start_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:54.569" level="ERROR">Calling listener method 'end_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:54.570" level="ERROR">Calling listener method 'start_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:56.575" level="ERROR">Calling listener method 'end_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:56.578" level="ERROR">Calling listener method 'start_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:58.752" level="ERROR">Calling listener method 'end_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:58.754" level="ERROR">Calling listener method 'start_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:58.770" level="ERROR">Calling listener method 'start_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:59.077" level="ERROR">Calling listener method 'end_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:59.081" level="ERROR">Calling listener method 'end_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:59.083" level="ERROR">Calling listener method 'end_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:04:59.086" level="ERROR">Calling listener method 'start_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+<msg timestamp="20180830 18:05:01.256" level="ERROR">Calling listener method 'end_keyword' of listener 'C:\Users\ADMINI~1\AppData\Local\Temp\RobotTempDir5499375165595419793\TestRunnerAgent.py' failed: KeyError: 'assign'</msg>
+</errors>
+</robot>

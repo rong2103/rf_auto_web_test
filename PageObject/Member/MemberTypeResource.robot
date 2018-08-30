@@ -23,7 +23,7 @@ Variables    ../../DataConfig/Member/MemberType_datas.py
     Input Text    ${add_membertype_name}    ${newmembertypename}   
     Input Text    ${add_membertype_level}    ${newmembertypelevel}
     Input Text    ${add_membertype_cost}    ${newmembertypecost}
-    Input Text     ${add_membertype_remark}   ${newmembertyperemark}
+    Input Text     ${add_membertype_remark}   ${remark}
 
 点击保存按钮    
     点击按钮    ${add_membertype_savebutton}

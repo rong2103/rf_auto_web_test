@@ -18,4 +18,7 @@ Suite Teardown    Selenium2Library.Close Browser
     选择房型间数-入住
     在房间筛选中选择一个房间号
     点击预订-确定按钮
-    
+ 
+会员入住
+    点击普通入住菜单
+       

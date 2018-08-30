@@ -1,7 +1,8 @@
 *** Variables ***
 ###订单详情界面-房间详情页面
 #-----------------------------------------------左侧房间选择li--------------------------------------------------------
-${order_room_detail}    //nz-sider/ul/li[3]
+#左侧房间列表
+${order_room_detail}    //nz-sider/ul/li[@class="orderListDetail listPad ant-menu-item ng-star-inserted"]
 #获取房间房号
 ${fangjian_detail_li}    //nz-sider//li[5]/span[2]
 #--------------------------------------------最上层操作按钮及其弹窗界面--------------------------------------------------
@@ -11,7 +12,7 @@ ${xuzhu_button}    //span[text()='续住']/..
 #续住-增加天数的+号
 ${xuzhu_addday_button}    //span[text()='+']
 #续住-按昨日价格续住勾选框
-${xuzhu_preprice_checkbox}    //div[text()='续住']/../app-stayover//label//input
+${xuzhu_preprice_checkbox}    //div[text()='续住']/../app-stayover//label/span
 #续住-确定按钮
 ${xuzhu_confirm_button}    //div[text()='续住']/../app-stayover//div[@class='sub']/button
 #续住-取消按钮
@@ -64,12 +65,12 @@ ${change_price_button}    //div[@class='cdk-overlay-pane']//li[4]
 #更多操作-改价-新房价
 ${changeprice_newprice_input}    //app-changeprice-inhouse//nz-input-number//input
 #更多操作-改价-确定按钮
-${changeprice_confirm_button}    //app-changeprice-inhouse//div[3]/buttons
+${changeprice_confirm_button}    //app-changeprice-inhouse//div[3]/button
 
 #更多操作-同来宾客
 ${guets_button}    //div[@class='cdk-overlay-pane']//li[5]
 #更多操作-同来宾客-姓名
-${guests_name_input}    //div[text()='同来宾客']/../../div[2]//tbody/tr/td[2]//inputs    
+${guests_name_input}    //div[text()='同来宾客']/../../div[2]//tbody/tr/td[2]//input  
 #更多操作-同来宾客-证件号码
 ${guests_number_input}    //div[text()='同来宾客']/../../div[2]//tbody/tr/td[4]//input
 #更多操作-同来宾客-备注
@@ -104,7 +105,12 @@ ${invoice_confirm_button}     //span[contains(text(),'开发票')]/../../../div[
 #入住天数：2天 
 ${detail_checkin_days}    //div[text()='入住天数：2天'] 
 ${detail_source}    //div[text()='客源类别：单位']
+#房间备注链接
+${room_remark_a}    //div[@class="customInfo customInfoRemark ant-col-4"]/a
 
+#修改备注
+${modify_remark_input}    //div[text()='修改备注']/../..//textarea
+${modify_remark_conf_btn}
 
 #-------------------------------------------下面订单入账部分-----------------------------------
 

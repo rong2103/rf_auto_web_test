@@ -5,9 +5,10 @@ Resource    ../../PageObject/LoginResource.robot
 Resource    ../../ElementDao/Checkin/CheckinElement.robot
 Resource    ../../PageObject/Checkin/CheckinPage.robot
 Resource    ../../ElementDao/Order/OrderDetailElement.robot
-Resource    ../../PageObject/Order/OrderPage.robot
+Resource    ../../PageObject/Order/OrderRoomPage.robot
 Variables    ../../DataConfig/Checkin/CheckinData.py
-Variables    ../../DataConfig/Order/OrderDatas.py
+Variables    ../../DataConfig/Order/OrderData.py
+
 Suite Setup   BuiltIn.Run Keywords    
 ...           login     AND     
 ...           点击入住菜单     
@@ -75,9 +76,18 @@ Suite Teardown    Selenium2Library.Close Browser
     输入同来宾客备注    ${remark}
     点击同来宾客确定按钮
 
-联房
+订单-联房
+    点击左侧房间订单详情
+    点击联房按钮
+    选择一个联房房间并确定
     
-       
+# 增发早餐券
+    
+订单详情-开发票
+    点击开发票按钮
+    开增值税普通发票    ${title}    ${money}    ${no}    ${remark}
+    
+      
     
      
     
